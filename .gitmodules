@@ -1,0 +1,3 @@
+[submodule "CLITools"]
+	path = CLITools
+	url = https://github.com/AV-IO/BetterShellEnvironment

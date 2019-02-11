@@ -1,0 +1,21 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "files.autoSave": "onFocusChange",
+    "editor.insertSpaces": false,
+    "editor.wordWrap": "on",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "telemetry.enableTelemetry": false,
+    "git.allowForcePush": true,
+    "go.formatTool": "gofmt",
+    "workbench.colorTheme": "Kary Pro Colors － Dark",
+    "todo-tree.defaultHighlight": {
+        "foreground": "green",
+        "type": "none"
+    },
+    "todo-tree.customHighlight": {
+        "TODO": {},
+        "FIXME": {}
+    },
+    "window.zoomLevel": 0
+}

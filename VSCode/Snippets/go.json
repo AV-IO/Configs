@@ -1,0 +1,32 @@
+{ // https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets
+	"Worker_Group_Sync_Recieve": {
+		"prefix": "WGSyncRecieve",
+		"description": "Recieves from worker group until all workers are done",
+		"body": [
+			"var ${1:wg} sync.WaitGroup",
+			"${2:ch} := make(chan []byte)",
+			"\n",
+			"for ${4:i}, ${5:j} := range ${3:x} {",
+				"\twg.Add(1)",
+				"\tgo ${6:worker}(${7:j}) //calling worker",
+			"}",
+			"\n",
+			"// Waits for all goroutines to complete, and closes the ${2:ch} channel.",
+			"// This signals the following statement that all work is complete",
+			"go func() {",
+				"\twg.Wait()",
+				"\tclose(${2:ch})",
+			"}()",
+			"for {",
+				"\t${8:v}, ok := <-${2:ch}",
+				"\tif ok {",
+					"\t\t//Process ${8:v}",
+					"\t\t$0",
+				"\t} else {",
+					"\t\t//All workers done",
+					"\t\t${9|break,return|}",
+				"\t}",
+			"}"
+		]
+	},
+}
