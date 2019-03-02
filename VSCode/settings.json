@@ -9,13 +9,38 @@
     "git.allowForcePush": true,
     "go.formatTool": "gofmt",
     "workbench.colorTheme": "Kary Pro Colors － Dark",
+    "todo-tree.tags": [
+        "ToDo",
+        "FixMe",
+        "Bug",
+        "Implement"
+    ],
     "todo-tree.defaultHighlight": {
-        "foreground": "green",
-        "type": "none"
+        "type": "tag",
+        "opacity": 50
     },
     "todo-tree.customHighlight": {
-        "TODO": {},
-        "FIXME": {}
+        "ToDo": {
+            "foreground": "green",
+            "iconColour": "green",
+            "icon": "check"
+        },
+        "FixMe": {
+            "foreground": "red",
+            "iconColour": "red",
+            "icon": "tools"
+        },
+        "Bug": {
+            "foreground": "red",
+            "iconColour": "red",
+            "icon": "bug"
+        },
+        "Implement": {
+            "foreground": "yellow",
+            "iconColour": "yellow",
+            "icon": "plus"
+        },
     },
+    "todo-tree.statusBar": "tags",
     "window.zoomLevel": 0
 }
