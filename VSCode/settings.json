@@ -8,7 +8,7 @@
     "telemetry.enableTelemetry": false,
     "git.allowForcePush": true,
     "go.formatTool": "gofmt",
-    "workbench.colorTheme": "Kary Pro Colors － Dark",
+    "workbench.colorTheme": "Flat UI Custom",
     "todo-tree.tags": [
         "ToDo",
         "FixMe",
