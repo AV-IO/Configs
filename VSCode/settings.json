@@ -11,7 +11,7 @@
     "workbench.colorTheme": "Flat UI Custom",
     "todo-tree.tags": [
         "ToDo",
-        "FixMe",
+        "Fix",
         "Bug",
         "Implement"
     ],
@@ -25,7 +25,7 @@
             "iconColour": "green",
             "icon": "check"
         },
-        "FixMe": {
+        "Fix": {
             "foreground": "red",
             "iconColour": "red",
             "icon": "tools"
