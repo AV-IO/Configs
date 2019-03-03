@@ -72,7 +72,7 @@ HYPHEN_INSENSITIVE="true"
 ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+#COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -94,6 +94,10 @@ COMPLETION_WAITING_DOTS="true"
 
 # 
 plugins=(colorize completion copybuffer copyzshell dircycle dirhistory docker git git-extras nmap solarized-man sublime zsh-autosuggestions zsh-completions zsh-dircolors-solarized zsh-syntax-highlighting zsnapshot)
+
+if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
+  FPATH=/usr/local/share/zsh/site-functions:$FPATH
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -142,6 +146,8 @@ alias docker='sudo docker'
 alias vim='nvim'
 alias github='hub'
 alias l='exa -ahlH --git'
+alias dig='grc dig'
+
 alias swift-demangle='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-demangle'
 
 mkdircd () {

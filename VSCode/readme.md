@@ -6,9 +6,11 @@
 
 ## Extensions
 
+* Bracket Pair Colourizer
+* Flat UI Theme
 * Go
 * GitLens
-* Kary Pro Colors
 * Python
 * Todo Tree
 * vscode-icons
+

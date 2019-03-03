@@ -35,7 +35,17 @@ nnoremap <leader>s :call FzyCommand("find -type f", ":sp")<cr>
 " colors
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme material
+let g:material_theme_style = 'default'
+
+if (has("nvim"))
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
+
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 
 " indents
 filetype indent on
