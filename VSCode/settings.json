@@ -1,46 +1,95 @@
 {
-    "workbench.iconTheme": "vscode-icons",
-    "files.autoSave": "onFocusChange",
-    "editor.insertSpaces": false,
-    "editor.wordWrap": "on",
-    "editor.fontLigatures": true,
-    "editor.fontFamily": "Fira Code",
-    "telemetry.enableTelemetry": false,
-    "git.allowForcePush": true,
-    "go.formatTool": "gofmt",
-    "workbench.colorTheme": "Flat UI Custom",
-    "todo-tree.tags": [
-        "ToDo",
-        "Fix",
-        "Bug",
-        "Implement"
-    ],
-    "todo-tree.defaultHighlight": {
-        "type": "tag",
-        "opacity": 50
-    },
-    "todo-tree.customHighlight": {
-        "ToDo": {
-            "foreground": "green",
-            "iconColour": "green",
-            "icon": "check"
-        },
-        "Fix": {
-            "foreground": "red",
-            "iconColour": "red",
-            "icon": "tools"
-        },
-        "Bug": {
-            "foreground": "red",
-            "iconColour": "red",
-            "icon": "bug"
-        },
-        "Implement": {
-            "foreground": "yellow",
-            "iconColour": "yellow",
-            "icon": "plus"
-        },
-    },
-    "todo-tree.statusBar": "tags",
-    "window.zoomLevel": 0
+	"dart.allowAnalytics": false,
+	"dart.flutterSdkPath": "/Users/ianguile/Documents/Programming/flutter",
+	"[dart]": {
+		"editor.insertSpaces": false,
+		"editor.selectionHighlight": false,
+		"editor.suggest.snippetsPreventQuickSuggestions": false,
+		"editor.suggestSelection": "first",
+		"editor.tabCompletion": "onlySnippets",
+		"editor.wordBasedSuggestions": false
+	},
+	"editor.detectIndentation": false,
+	"editor.fontFamily": "Fira Code",
+	"editor.fontLigatures": true,
+	"editor.formatOnSave": true,
+	"editor.insertSpaces": false,
+	"editor.wordWrap": "on",
+	"explorer.confirmDragAndDrop": false,
+	"files.autoSave": "onFocusChange",
+	"git.allowForcePush": true,
+	"git.enableCommitSigning": true,
+	"go.useLanguageServer": true,
+	"go.autocompleteUnimportedPackages": true,
+	"gopls": {
+		"usePlaceholders": true, // add parameter placeholders when completing a function
+		// Experimental settings
+		"completeUnimported": true, // autocomplete unimported packages
+		"deepCompletion": true, // enable deep completion
+	},
+	"go.coverOnSingleTest": true,
+	"go.coverageDecorator": {
+		"type": "highlight",
+		"coveredHighlightColor": "rgba(64,128,128,0.0625)",
+		"uncoveredHighlightColor": "rgba(128,64,64,0.125)",
+		"coveredGutterStyle": "blockblue",
+		"uncoveredGutterStyle": "slashyellow"
+	},
+	"go.formatTool": "goformat",
+	"go.formatFlags": [
+		"-s"
+	],
+	"go.lintOnSave": "workspace",
+	"go.lintTool": "golangci-lint",
+	"[go]": {
+		"editor.tabSize": 8
+	},
+	"latex-workshop.view.pdf.viewer": "tab",
+	"telemetry.enableTelemetry": false,
+	"todo-tree.filtering.ignoreGitSubmodules": true,
+	"todo-tree.general.statusBar": "tags",
+	"todo-tree.general.tags": [
+		"ToDo",
+		"Fix",
+		"Bug",
+		"Implement"
+	],
+	"todo-tree.highlights.customHighlight": {
+		"ToDo": {
+			"foreground": "green",
+			"iconColour": "green",
+			"icon": "check"
+		},
+		"Fix": {
+			"foreground": "red",
+			"iconColour": "red",
+			"icon": "tools"
+		},
+		"Bug": {
+			"foreground": "red",
+			"iconColour": "red",
+			"icon": "bug"
+		},
+		"Implement": {
+			"foreground": "yellow",
+			"iconColour": "yellow",
+			"icon": "plus"
+		}
+	},
+	"todo-tree.highlights.defaultHighlight": {
+		"type": "tag",
+		"opacity": 50
+	},
+	"todo-tree.tree.showScanModeButton": false,
+	"window.zoomLevel": 1,
+	"workbench.colorTheme": "FlatUI Dark",
+	"workbench.sideBar.location": "left",
+	"workbench.tips.enabled": false,
+	"files.associations": {
+		"*.htpl": "html"
+	},
+	"python.pythonPath": "/usr/local/bin/python3",
+	"terminal.external.osxExec": "iTerm.app",
+	"terminal.integrated.fontFamily": "MesloLGS NF",
+	"workbench.iconTheme": "material-icon-theme"
 }
